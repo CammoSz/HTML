@@ -8,47 +8,44 @@
     <script>var w = window.innerWidth;</script>
 
     <style>
-    ul
-    {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-    }
-
-    li
-    {
-        float: left;
-        width: 14%;
-    }
-
-        li a {
-            display: block;
-            color: darkblue;
-            text-align: center;
-            padding: 10%;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-size: 14px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
         }
 
-    li a:hover
-    {
-        color: orange;
-    }
+        li {
+            float: left;
+            width: 14%;
+        }
+
+            li a {
+                display: block;
+                color: darkblue;
+                text-align: center;
+                padding: 10%;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+
+                li a:hover {
+                    color: orange;
+                }
     </style>
 </head>
 <body>
     <div style="width:100%;">
         <ul>
-            <li><a href="https://www.yeovil.ac.uk/school-leavers/"><b>SCHOOL LEAVERS (16-18)</b></a></li>
-            <li><a href="https://www.yeovil.ac.uk/apprenticeships/"><b>APPRENTICESHIPS</b></a></li>
-            <li><a href="https://www.yeovil.ac.uk/adults/"><b>ADULTS (19+)</b></a></li>
-            <li><a href="https://www.yeovil.ac.uk/"><img src="YeovilCollegeLogo.png" title="yeovil logo" width="120" height="80>"</center></a></li>
-            <li><a href="https://www.yeovil.ac.uk/employers/"><b>EMPLOYERS</b></a></li>
-            <li><a href="https://www.yeovil.ac.uk/about/"><b>ABOUT</b></a></li>
-            <li><a href="https://www.yeovil.ac.uk/apply-now/"><b>APPLY NOW</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/school-leavers/"><b><br><br>SCHOOL LEAVERS (16-18)</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/apprenticeships/"><b><br><br>APPRENTICESHIPS</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/adults/"><b><br><br>ADULTS (19+)</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/"><img src="YeovilCollegeLogo.png" title="yeovil logo" width="150" height="100"></a></li>
+            <li><a href="https://www.yeovil.ac.uk/employers/"><b><br><br>EMPLOYERS</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/about/"><b><br><br>ABOUT</b></a></li>
+            <li><a href="https://www.yeovil.ac.uk/apply-now/"><b><br><br>APPLY NOW</b></a></li>
         </ul>
     </div>
 </body>
