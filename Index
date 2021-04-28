@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title> Home </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
+    <script>var w = window.innerWidth;</script>
+
     <style>
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+    li
+    {
+        float: left;
+        width: 14%;
+    }
 
-li {
-  float: left;
-}
+        li a {
+            display: block;
+            color: darkblue;
+            text-align: center;
+            padding: 10%;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
-</style>
-  </head>
-  <body>
-    <div>
-      <ul>
-        <li> <a href="index.html" moz-do-not-send="true">Home</a> </li>
-        <li><a href="news.html" moz-do-not-send="true">News</a></li>
-        <li><a href="contact.html" moz-do-not-send="true">Contact</a></li>
-        <li><a href="about.html" moz-do-not-send="true">About</a></li>
-      </ul>
+    li a:hover
+    {
+        color: orange;
+    }
+    </style>
+</head>
+<body>
+    <div style="width:100%;">
+        <ul>
+            <li><a href="index.html" moz-do-not-send="true"><b>SCHOOL LEAVERS (16-18)</b></a> </li>
+            <li><a href="news.html" moz-do-not-send="true"><b>APPRENTICESHIPS</b></a></li>
+            <li><a href="contact.html" moz-do-not-send="true"><b>ADULTS (19+)</b></a></li>
+            <li><img src="YeovilCollegeLogo.png"></li>
+            <li><a href="about.html" moz-do-not-send="true"><b>EMPLOYERS</b></a></li>
+            <li><a href="about.html" moz-do-not-send="true"><b>ABOUT</b></a></li>
+            <li><a href="about.html" moz-do-not-send="true"><b>APPLY NOW</b></a></li>
+        </ul>
     </div>
-  </body>
+</body>
 </html>
