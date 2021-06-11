@@ -3,10 +3,6 @@
 <head>
     <title> Yeovil College E-Sport Course </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-
-    <script>var w = window.innerWidth;</script>
-
     <style>
 
         * {
@@ -78,20 +74,24 @@
             text-decoration: none;
             font-size: 30px;
             color: orange;
+            transition: background-color 150ms, color 150ms;
         }
 
             .button:hover {
                 background-color: orange;
                 color: white;
             }
+
         /* Comments have stopped working beyond this point and I dont know why, something might be broken */
         /* The <style> area uses CSS but the rest of the file is in HTML so a different syntax is needed */
+        /* wow that is dumb af */
 
     </style> <!-- This is a comment in HTML -->
 </head>
 
 <body style="overflow-x: hidden"> <!-- prevents the page from being too wide -->
-    <div style="width: 100vw; float: left; padding: 0; height: 120px;">
+
+    <div style="width: 100vw; float: left; padding: 0; height: 120px; position: relative; top: -65px;"> <!-- There was whitespace at the top being annoying, not sure its the best solution so if you find a better way go ahead --> 
         <ul>
             <li><a class="blue" href="https://www.yeovil.ac.uk/school-leavers/"><b><br><br>SCHOOL LEAVERS (16-18)</b></a></li>
             <li><a class="blue" href="https://www.yeovil.ac.uk/apprenticeships/"><b><br><br>APPRENTICESHIPS</b></a></li>
@@ -103,7 +103,7 @@
         </ul>
     </div>
 
-    <div style="width: 100vw; float: left; height: 19px; margin: 0 0 43px 0;">
+    <div style="width: 100vw; float: left; height: 19px; margin: 0 0 43px 0; position: relative; top: -60px;">
         <ul style="background-color: darkblue;">
             <li style="width: 12%;"><a href="https://www.yeovil.ac.uk/university-centre/"><b>UNIVERSITY CENTRE</b></a></li>
             <li style="width: 12%;"><a href="https://www.yeovil.ac.uk/our-courses/"><b>OUR COURSES</b></a></li>
@@ -116,7 +116,7 @@
         </ul>
     </div>
 
-    <div style="width: 100vw; float: left; padding: 0; background-color: #e8e8e8;"> <!-- All fixed! -->
+    <div style="width: 100vw; float: left; padding: 0; background-color: whitesmoke; position: relative; top: -60px;"> <!-- All fixed! --> <!-- Yay! But use whitesmoke it looks better -->
         <div style="float: left; width: 40%; height: 100%; padding: 30px; margin: 0;">
             <h2>IT</h2>
             <h1>E-Sports - Level 3<br>(September 2021 Start)</h1>
@@ -135,13 +135,13 @@
             </div>
 
             <div class="button" style="text-align: center">
-                <p style="font-size: 7px"></p>
-                Apply Here
-                <p style="font-size: 7px"></p>
+                <p style="font-size: 20px; text-decoration: none; color: inherit">
+                <a style="text-decoration: none; color: inherit" href="Apply.html"><b>APPLY</b></a> <!-- Tidied this up -->
+                </p>
             </div>
         </div>
 
-        <img src="comfuter.jpg" style="float: right; width: 50%; margin: 0;">
+        <img src="gamergirls.jpg" style="float: right; width: 50%; margin: 0;">
     </div>
 
     <div style="width: 100%; margin: 50px; padding: 0px;">
@@ -150,12 +150,6 @@
             <div style="float: left; width: 50%;">
                 <p style="color: black; font-size: 20px;">Our first E-Sports course is designed to prepare our students for careers in E-Sports by providing them with the equipment to play competitive games such as CSGO and League of Legends. This will provide experince in competitive gaming which will assist our students in procuring a career in E-Sports gaming.</p>
             </div>
-        </div>
-    </div>
-
-    <div>
-        <div style="float: left">
-            <h3></h3>
         </div>
     </div>
 
