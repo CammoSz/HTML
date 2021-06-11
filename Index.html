@@ -61,10 +61,6 @@
             color: orange;
         }
 
-        /*.logo {
-            width: 100%; //Width broke the image and made it look like ass so dont touch it, remove when understood
-        }*/
-
         .blue {
             color: darkblue;
         }
@@ -72,6 +68,7 @@
         .fill {
             width: 100%;
         }
+
         .button {
             outline: solid;
             outline-color: orange;
@@ -86,13 +83,15 @@
             .button:hover {
                 background-color: orange;
                 color: white;
-            } /* Comments have stopped working beyond this point and I dont know why, something might be broken */
+            }
+        /* Comments have stopped working beyond this point and I dont know why, something might be broken */
+        /* The <style> area uses CSS but the rest of the file is in HTML so a different syntax is needed */
 
-    </style>
+    </style> <!-- This is a comment in HTML -->
 </head>
 
-<body>
-    <div style="width:100%; height: 120px;"> 
+<body style="overflow-x: hidden"> <!-- prevents the page from being too wide -->
+    <div style="width:100%; height: 120px;">
         <ul>
             <li><a class="blue" href="https://www.yeovil.ac.uk/school-leavers/"><b><br><br>SCHOOL LEAVERS (16-18)</b></a></li>
             <li><a class="blue" href="https://www.yeovil.ac.uk/apprenticeships/"><b><br><br>APPRENTICESHIPS</b></a></li>
@@ -104,7 +103,7 @@
         </ul>
     </div>
 
-    <div style="width:100vw; padding:0px; height: 19px;"> 
+    <div style="width:100vw; float: left; height: 19px; margin: 0 0 43px 0;">
         <ul style="background-color: darkblue;">
             <li style="width: 12%;"><a href="https://www.yeovil.ac.uk/university-centre/"><b>UNIVERSITY CENTRE</b></a></li>
             <li style="width: 12%;"><a href="https://www.yeovil.ac.uk/our-courses/"><b>OUR COURSES</b></a></li>
@@ -117,8 +116,8 @@
         </ul>
     </div>
 
-    <div style="width:100%; margin:50px; padding:0px; height: 100%; background-color: whitesmoke;">
-        <div style="float:left; width:60%; height: 100%; background-color: whitesmoke;">
+    <div style="width:100vw; float: left; padding: 0; background-color: #e8e8e8;"> <!-- All fixed! -->
+        <div style="float:left; width:46%; height: 100%; margin: 30px 0 30px 30px;">
             <h2>IT</h2>
             <h1>E-Sports - Level 3<br>(September 2021 Start)</h1>
 
@@ -141,7 +140,8 @@
                 <p style="font-size:7px"></p>
             </div>
         </div>
-        <img src="comfuter.jpg" style="float: left; width: 30%; padding:0px;">
+
+        <img src="comfuter.jpg" style="float: right; width: 52%; margin: 0;">
     </div>
 
     <div style="width:100%; margin:50px; padding:0px;">
@@ -150,6 +150,7 @@
             <div style="float:left; width:50%;">
                 <p style="color: black; font-size:20px;">Our first E-Sports course is designed to prepare our students for careers in E-Sports by providing them with the equipment to play competitive games such as CSGO and League of Legends. This will provide experince in competitive gaming which will assist our students in procuring a career in E-Sports gaming.</p>
             </div>
+        </div>
     </div>
 
     <div>
