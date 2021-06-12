@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<style>
+
+    * {
+        font-family: sans-serif;
+    }
+
+    h1 {
+        text-decoration: none;
+        font-size: 50px;
+        color: darkblue;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        color: darkblue;
+    }
+
+    .button {
+        outline: solid;
+        outline-color: orange;
+        outline-width: 3px;
+        padding: 15px;
+        float: left;
+        text-decoration: none;
+        font-size: 20px;
+        color: orange;
+        transition: background-color 150ms, color 150ms;
+        margin-right: 20px;
+        user-select: none; /* Prevents the user from selecting the text inside the button instead of clicking it */
+    }
+
+        .button:hover {
+            background-color: orange;
+            color: white;
+        }
+</style>
+
+<html>
+<head>
+    <title> Application Successful </title>
+</head>
+
+<body>
+    <h1>Application Successful</h1>
+    <p>Press Continue to return to the Cource Page (Your Application will be Saved)</p>
+    <p class="button" onclick="window.location.href='Index.html';">Continue</p>
+</body>
+</html>
