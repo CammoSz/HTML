@@ -93,6 +93,27 @@
                 color: white;
             }
     </style>
+
+    <script>
+        function checkIfFeildsAreFilled() {
+            let inputVal = document.getElementsByClassName("requiredInput");
+
+            let accepted = true;
+
+            for (i = 0; i < inputVal.length; i++) {
+                if (inputVal[i].value == "") {
+                    accepted = false;
+                }
+            }
+
+            if (accepted == true && document.getElementById("date").value != "") {
+                window.location.href = 'Completed.html';
+            }
+            else {
+                window.location.href = 'https://www.youtube.com/watch?v=-51AfyMqnpI';
+            }
+        }
+    </script>
 </head>
 
 <!-- prevents the page from being too wide -->
@@ -142,13 +163,13 @@
             <p style="font-size: 40px;">All fields in <strong>bold</strong> with a * must be filled</p>
 
             <p><strong>Title *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>First Forename *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>Surname *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p>Other Forenames</p>
             <input>
@@ -157,42 +178,42 @@
             <input>
 
             <p><strong>Date of Birth *</strong></p>
-            <input type="date">
+            <input type="date" id="date">
 
             <p><strong>Sex *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>Address Line 1 *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p>Address Line 2</p>
             <input>
 
             <p><strong>Town *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>County *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>Postcode *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>Telephone *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p>Mobile</p>
             <input>
 
             <p><strong>Email Address *</strong></p>
-            <input>
+            <input class="requiredInput">
 
             <p><strong>Please write a few words to tell us why you have chosen this cource *</strong></p>
-            <textarea id="text" name="text" rows="12" style="width: 75%;"></textarea>
+            <textarea class="requiredInput" id="text" name="text" rows="12" style="width: 75%;"></textarea>
 
             <br>
 
             <p class="button" onclick="window.location.href='Index.html';">Back</p>
-            <p class="button" onclick="window.location.href='Completed.html';">Continue</p>
+            <p class="button" onclick="checkIfFeildsAreFilled();">Continue</p>
         </section>
     </div>
 
